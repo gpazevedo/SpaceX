@@ -23,3 +23,9 @@ Define a schema's structure to support the actions that our clients will take. O
 Declaring an listener.
 
 [Coding](./server/src/index.js)
+
+## Connect a REST API
+
+Connecting the SpaceX v2 REST API to our server
+
+[Coding](./server/src/datasources/launch.js)
