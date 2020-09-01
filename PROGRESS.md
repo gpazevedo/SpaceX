@@ -45,3 +45,7 @@ Defining a writable data source that allows us to store application data.
 Linking datasources to schemas. Defining the data origin that populates each field in the Schemas.
 
 [Coding](./server/src/resolvers.js)
+
+## Adding resolvers to Apollo Server
+
+[Coding](./server/src/index.js)
