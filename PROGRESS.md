@@ -29,3 +29,10 @@ Declaring an listener.
 Connecting the SpaceX v2 REST API to our server
 
 [Coding](./server/src/datasources/launch.js)
+
+## Connect a database
+
+Defining a writable data source that allows us to store application data.
+
+[Coding](./server/src/datasources/user.js)
+
