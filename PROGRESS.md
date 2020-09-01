@@ -24,15 +24,24 @@ Declaring an listener.
 
 [Coding](./server/src/index.js)
 
-## Connect a REST API
+## Connecting to a REST API
 
 Connecting the SpaceX v2 REST API to our server
 
 [Coding](./server/src/datasources/launch.js)
 
-## Connect a database
+## Connecting to a database
 
 Defining a writable data source that allows us to store application data.
 
 [Coding](./server/src/datasources/user.js)
 
+## Adding data sources to Apollo Server
+
+[Coding](./server/src/index.js)
+
+## Writing Resolvers
+
+Linking datasources to schemas. Defining the data origin that populates each field in the Schemas.
+
+[Coding](./server/src/resolvers.js)
