@@ -26,7 +26,7 @@ Declaring an listener.
 
 ## Connecting to a REST API
 
-Connecting the SpaceX v2 REST API to our server
+Connecting the SpaceX v2 REST API to our server, building an access to the API.
 
 [Coding](./server/src/datasources/launch.js)
 
@@ -40,12 +40,19 @@ Defining a writable data source that allows us to store application data.
 
 [Coding](./server/src/index.js)
 
-## Writing Resolvers
+## Writing Resolvers for some Queries
 
-Linking datasources to schemas. Defining the data origin that populates each field in the Schemas.
+Linking datasources to schemas. Defining the data hooks that populates fields of types defined in the Schema. Actions enabled (related to types with data hook defined):
+
+* Fetch a list of all upcoming rocket launches
+* Fetch a specific launch by its ID
 
 [Coding](./server/src/resolvers.js)
 
 ## Adding resolvers to Apollo Server
 
 [Coding](./server/src/index.js)
+
+## Writing Resolvers for the more Queries
+
+[Coding](./server/src/resolvers.js)

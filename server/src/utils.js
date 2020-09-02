@@ -1,5 +1,6 @@
 const SQL = require('sequelize');
 
+
 module.exports.paginateResults = ({
   after: cursor,
   pageSize = 20,
@@ -65,5 +66,17 @@ module.exports.createStore = () => {
     userId: SQL.INTEGER,
   });
 
+
+  async function checkDb (db) { 
+    try {
+      await db.authenticate()
+      console.log('Connection has been established successfully.');
+    } catch (error) {
+      console.error('Unable to connect to the database:', error);
+    }
+  }
+  
+  checkDb(db)
+  
   return { users, trips };
 };
