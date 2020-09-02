@@ -20,7 +20,7 @@ Define a schema's structure to support the actions that our clients will take. O
 
 ## Preparing to serve the Schema for the clients actions
 
-Declaring an listener.
+Declaring a listener.
 
 [Coding](./server/src/index.js)
 
@@ -42,7 +42,7 @@ Defining a writable data source that allows us to store application data.
 
 ## Writing Resolvers for some Queries
 
-Linking datasources to schemas. Defining the data hooks that populates fields of types defined in the Schema. Actions enabled (related to types with data hook defined):
+Linking data sources to schemas. Defining the data hooks that populates fields of types defined in the Schema. Actions enabled (related to types with data hook defined):
 
 * Fetch a list of all upcoming rocket launches
 * Fetch a specific launch by its ID
@@ -63,10 +63,30 @@ Setting up cursor-based pagination: Redefining the schema: QNow, Query.launches 
 
 [Coding](./server/src/schema.js)
 
-Utils has the function paginateResults that is a helper function for paginating data from the server.
+Utils have the function paginateResults which is a helper function for paginating data from the server.
 
 [Coding](./server/src/utils.js)
 
 Updating the necessary resolver functions to accommodate pagination.
+
+[Coding](./server/src/resolvers.js)
+
+## Mutation resolvers: user login
+
+Resolver for Mutation.login, which enables a user to log in to our application.
+Using the email to identify each user.
+
+[Coding](./server/src/resolvers.js)
+
+## Authenticating logged-in users
+
+Check if the authorization received in the requisition header corresponds to a user.
+Creating a context with the authenticated user. The userAPI will be constructed with the identified user.
+
+ [Coding](./server/src/index.js)
+
+## Enabling Actions for the identified user
+
+Now all of our resolvers can access (userAPI) the details for the logged-in user and perform actions specifically for that user. Adding bookTrips and cancelTrips mutations.
 
 [Coding](./server/src/resolvers.js)
