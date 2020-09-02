@@ -90,3 +90,16 @@ Creating a context with the authenticated user. The userAPI will be constructed 
 Now all of our resolvers can access (userAPI) the details for the logged-in user and perform actions specifically for that user. Adding bookTrips and cancelTrips mutations.
 
 [Coding](./server/src/resolvers.js)
+
+## Apollo Studio Integration
+
+ApolloServer constructor to enable automatic schema reporting
+
+ [Coding](./server/src/index.js)
+
+## Creating our Client
+
+Apollo Client is a comprehensive state management library for JavaScript. It enables you to use GraphQL to manage both local and remote data. Apollo Client is view-layer agnostic, so you can use it with React, Vue, Angular, or even vanilla JS.
+
+ [Coding](./client/src/index.tsx)
+
