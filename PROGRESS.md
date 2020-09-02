@@ -53,6 +53,20 @@ Linking datasources to schemas. Defining the data hooks that populates fields of
 
 [Coding](./server/src/index.js)
 
-## Writing Resolvers for the more Queries
+## Writing Resolvers for the more fields
+
+[Coding](./server/src/resolvers.js)
+
+## Paginate Results
+
+Setting up cursor-based pagination: Redefining the schema: QNow, Query.launches takes in two parameters (pageSize and after) and returns a LaunchConnection object.
+
+[Coding](./server/src/schema.js)
+
+Utils has the function paginateResults that is a helper function for paginating data from the server.
+
+[Coding](./server/src/utils.js)
+
+Updating the necessary resolver functions to accommodate pagination.
 
 [Coding](./server/src/resolvers.js)
