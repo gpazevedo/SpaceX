@@ -1,17 +1,21 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import {
   ApolloClient,
-  InMemoryCache,
   NormalizedCacheObject,
   ApolloProvider
 } from '@apollo/client';
-import React from 'react';
-import ReactDOM from 'react-dom';
 import Pages from './pages';
 import injectStyles from './styles';
+import { cache } from './cache';
+
 
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
-  uri: 'http://localhost:4000/',
-  cache: new InMemoryCache()
+  cache,
+      uri: 'http://localhost:4000/graphql',
+    headers: {
+      authorization: localStorage.getItem('token') || '',
+    },
 });
 
 injectStyles();
@@ -21,3 +25,4 @@ ReactDOM.render(
   </ApolloProvider>,
   document.getElementById('root')
 );
+
