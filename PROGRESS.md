@@ -124,3 +124,11 @@ To render the list, we pass the GET_LAUNCHES query from the previous step into o
 Building out our detail page: define our GraphQL query to get the launch details, then render a component with useQuery to execute it.
 
  [Coding](./client/src/pages/launch.tsx)
+
+ ## Using fragments to share code
+
+ Defining and using a fragment (LAUNCH_TILE_DATA)
+
+ [Coding](./client/src/pages/launches.tsx)
+ [Coding](./client/src/pages/launch.tsx)
+
