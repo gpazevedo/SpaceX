@@ -29,14 +29,9 @@ const GET_LAUNCHES = gql`
       hasMore
       launches {
         ...LaunchTile
-        }
-        mission {
-          name
-          missionPatch
-        }
       }
     }
-  }
+  },
   ${LAUNCH_TILE_DATA}
 `;
 
