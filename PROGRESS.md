@@ -115,3 +115,6 @@ To render the list, we pass the GET_LAUNCHES query from the previous step into o
 
  [Coding](./client/src/pages/launches.tsx)
 
+## Pagination
+
+ [Coding](./client/src/pages/launches.tsx)
