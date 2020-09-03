@@ -132,3 +132,7 @@ Building out our detail page: define our GraphQL query to get the launch details
  [Coding](./client/src/pages/launches.tsx)
  [Coding](./client/src/pages/launch.tsx)
 
+## Bypassing the cache
+
+ [Coding](./client/src/pages/profile.tsx)
+ 
