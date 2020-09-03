@@ -108,3 +108,10 @@ Apollo Client is a comprehensive state management library for JavaScript. It ena
 To connect Apollo Client to React, we wrap our app in the ApolloProvider component included in the @apollo/client package. We pass the component our ApolloClient instance via the client prop.
 
  [Coding](./client/src/index.tsx)
+
+## Fetch data
+
+To render the list, we pass the GET_LAUNCHES query from the previous step into our useQuery hook.
+
+ [Coding](./client/src/pages/launches.tsx)
+
