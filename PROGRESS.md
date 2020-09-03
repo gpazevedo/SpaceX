@@ -118,3 +118,9 @@ To render the list, we pass the GET_LAUNCHES query from the previous step into o
 ## Pagination
 
  [Coding](./client/src/pages/launches.tsx)
+
+## Fetching a single launch
+
+Building out our detail page: define our GraphQL query to get the launch details, then render a component with useQuery to execute it.
+
+ [Coding](./client/src/pages/launch.tsx)
